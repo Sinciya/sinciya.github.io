@@ -374,8 +374,8 @@ section#contact {}
     }
     
     h1.header-title {
-        font-size: large;
-        padding: 18em 1.5em 2em 1.5em;
+        font-size: x-large;
+        padding: 15em 1.5em 2em 2em;
     }
     
     p.header-title {
@@ -421,7 +421,7 @@ section#contact {}
         /* 設置絕對定位 */
         top: 50%;
         /* 置中對齊 */
-        left: 51%;
+        left: 52%;
         /* 置中對齊 */
         transform: translate(-50%, -50%);
         /* 置中對齊 */
