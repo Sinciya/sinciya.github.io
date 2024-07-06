@@ -435,6 +435,7 @@ section#contact {}
         /* 確保圖片不超過容器寬度 */
         height: auto;
         /* 保持圖片比例 */
+        content: url('../assets/images/header_card.png');
     }
     
     
