@@ -1,0 +1,100 @@
+body {
+    font-family: "Julius Sans One";
+    line-height: 1.6;
+    background-image: linear-gradient(10deg,
+            hsl(12deg 100% 80%) 0%,
+            hsl(12deg 24% 83%) 45%,
+            hsl(188deg 65% 83%) 100%);
+}
+
+header {
+    font-family: "Julius Sans One";
+    background-image: url("../assets/images/background.jpg");
+    color: #ab6060;
+    padding: 100px 0;
+    text-align: left;
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header-title {
+    z-index: 2;
+    /* 設置z-index，使文字層級高於圖片 */
+    position: relative;
+    /* 使z-index屬性生效 */
+}
+
+.overlay {
+    z-index: 1;
+    position: absolute;
+    /* 設置絕對定位 */
+    top: 50%;
+    /* 置中對齊 */
+    left: 50%;
+    /* 置中對齊 */
+    transform: translate(-50%, -50%);
+    /* 置中對齊 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-image {
+    max-width: 150%;
+    /* 確保圖片不超過容器寬度 */
+    height: auto;
+    /* 保持圖片比例 */
+}
+
+
+section {
+    padding: 50px 0;
+}
+
+section#about {}
+
+section#portfolio {}
+
+section#contact {}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+.text-style {
+    font-size: large;
+    font-weight: bolder;
+    font-family: "Julius Sans One";
+    color: #ab6060;
+}
