@@ -1,1 +1,0 @@
-# sinciya.github.io
